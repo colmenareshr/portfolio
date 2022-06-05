@@ -23,12 +23,7 @@
      grid-template-areas:
      "hero_img"
      "hero_title";
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit, (minmax(600px, 1fr)));
-  grid-template-rows: repeat(8, 1fr);
-  align-items: center; */
-    /* display: flex;
-    flex-direction: column-reverse; */
+    
   }
 
 .hero_img {
@@ -46,6 +41,7 @@
 }
 .hero_title {
    grid-area: hero_title;
+   font-size: 37px;
 }
 
 }

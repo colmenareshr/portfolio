@@ -31,6 +31,7 @@ h1 {
 body {
   height: 100vh;
   max-width: 100%;
+  background-color: #fff;
 }
 .navbar {
   display: grid;
@@ -367,5 +368,86 @@ margin-top: 5px;
   color: #fff;
 }
 .mais {
+  height: 10vh;;
+  width: 100%;
+  background-color:#1d1d1d;
+color:#fff;
+text-align: center;
+line-height: 10vh;
+font-size: 18px;
+font-family: Raleway;
+letter-spacing: 2px;
+font-weight: 500;
+}
+#contato {
+  width: 100%;
+  background-color:rgb(208, 208, 208);
+  padding: 90px;
   
+}
+.contato_container {
+max-width: 900px;
+margin: 0 auto;
+display: grid;
+  grid-template-areas: 
+  "subtitulo"
+  "text_form"
+  "form_contato";
+  justify-items:center ;
+  gap: 30px;
+}
+.subtitulo {
+  grid-area: subtitulo;
+
+}
+.text_form {
+  grid-area: text_form;
+  text-align: center;
+}
+.form_contato {
+  grid-area: form_contato;
+  
+}
+.contato_items input, textarea  {
+  width: 70%;
+  margin-top: 20px;
+  padding: 7px;
+  border: none;
+  border-left: 3px solid #000000;
+  border-bottom: 3px solid #000000;
+ font-family: inherit; 
+}
+
+.contato_items button {
+  margin-top: 20px;
+  padding: 7px;
+  background: transparent;
+  border: none;
+  border-left: 3px solid #000000;
+border-right: 3px solid #000000;
+cursor: pointer;
+}
+
+#footer {
+  /* height: 20vh; */
+  width: 100%;
+  background-color: #1d1d1d;
+  color:#fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:10px;
+  justify-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#footer a{
+  color: #c4c4c4;
+  text-decoration: none;
+  padding: 5px;
+}
+#footer a:hover {
+  color: #fff;
+}
+#footer .fa-heart {
+  color:rgb(244, 3, 3);
 }
