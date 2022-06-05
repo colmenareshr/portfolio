@@ -21,6 +21,7 @@ h1 {
   font-size: 25px;
   line-height: 37px;
   font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
   border: 3px solid #000000;
   width: fit-content;
@@ -162,6 +163,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 300;
+  letter-spacing: 2px;
   color: #fff;
   padding: 0 15px 0 15px;
   border-left: 2px solid #fff;
@@ -171,6 +173,7 @@ body {
   font-family: Raleway;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 2px;
   font-weight: 300;
   color: #181818;
   padding: 0 15px 0 15px;
@@ -190,7 +193,7 @@ body {
 }
 
 .sobre_mim {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 #sobre_mim .sobre_mim_description {
@@ -208,33 +211,27 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   padding: 50px;
   gap: 30px;
-  
 }
 
 .servicios_icon-title .servicios_icon {
   display: flex;
 }
 #experiencia {
- width: 100%;
-  max-width: 10px;
+  width: 100%;
+  max-width: 900px;
   padding: 90px;
   margin: 0 auto;
+}
+#experiencia .experiencia_titles {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.experiencia {
-  /* display:grid;
-  grid-template-columns: minmax(4fr, 1fr); */
+  padding-bottom: 60px;
 }
 .experiencia .container_cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(275px , 1fr));
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px; */
-  
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  padding-bottom: 90px;
 }
 
 .experiencia .container_cards .cards {
@@ -245,25 +242,29 @@ body {
   height: 90px;
   width: 90px;
 }
- /* #experiencia .experiencia_container {
-  flex-wrap: wrap;
-}
-.experiencia_container .cards_exp {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(1250px, 0.5fr));
-}
-.experiencia_container .container_cards {
-display: flex;
-gap:30px;
-}
-
-.container_cards .cards {
-  height: 90px;
-  width: 90px;
-  display: block;
-  text-align: center;
-}
-.container_cards .cards img {
-  height: 100%;
+#aprendiendo {
   width: 100%;
-} */
+  max-width: 900px;
+  padding: 90px;
+  margin: 0 auto;
+}
+#projetos {
+  width: 100%;
+  max-width: 1100px;
+  
+}
+#projetos .projetos_title {
+  height: 50vh;
+  width: 100%;
+  background-image: url("/images/portada-portfolio.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#projetos .projetos_title h2 {
+  border: 2px solid #fff;
+}
