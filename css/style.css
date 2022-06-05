@@ -250,7 +250,8 @@ body {
 }
 #projetos {
   width: 100%;
-  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90% , 1fr));
   
 }
 #projetos .projetos_title {
@@ -262,9 +263,109 @@ body {
   background-position: center;
   color:#fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content:center;
+  align-items:center;
 }
 #projetos .projetos_title h2 {
   border: 2px solid #fff;
+}
+.projetos_cat {
+  height: 20vh;
+  width: 100%;
+  background-color: #1d1d1d;
+  color:#fff;
+  font-family: Raleway;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) );
+  align-items: center;
+  justify-items: center;
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px; */
+}
+.projetos_cat h3 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.projetos_card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+ .card_item1 {
+  height: 230px;
+  
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/crossfit-bikain.JPG');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.card_item2 {
+  height: 230px;
+ 
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/sistema-ventas.JPG');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.card_item3 {
+  height: 230px;
+ 
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/listo-limpio.JPG');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.card_item4 {
+  height: 230px;
+ 
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/dr-trejos.JPG');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.card_item5 {
+  height: 230px;
+ 
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/el-merkat.JPG');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.card_item6 {
+  height: 230px;
+ 
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/sistemas-administrativos.JPG');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.card_item2 {
+  height: 230px;
+ 
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/sistema-ventas.JPG');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+color: rgba(0,0,0,.1);
+}
+.card_text a {
+margin-top: 5px;
+}
+.card_text:hover {
+  color: #fff;
+}
+.mais {
+  
 }
