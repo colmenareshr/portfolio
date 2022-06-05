@@ -27,28 +27,38 @@
   </head>
   <body>
     <header id="header">
-      
-    <nav class="navbar">
+      <nav class="navbar">
         <div class="avatar">
           <span class="logo">
-            <img src="/images/logo-humberto.png" alt="Humberto Colomenares Logo" class="logo_imagen"> 
-         </span>
-         </div>
+            <img
+              src="/images/logo-humberto.png"
+              alt="Humberto Colomenares Logo"
+              class="logo_imagen"
+            />
+          </span>
+        </div>
         <ul class="menu">
           <li class="menu__items"><a href="#sobre_mim">Sobre mim</a></li>
-          <li class="menu__items"><a href="#experiencia">Experiência</a> </li>
-          <li class="menu__items"><a href="#projetos">Projetos</a> </li>
-          <li class="menu__items"><a class="btn_menu" href="#contato">Fale comigo</a></li>
+          <li class="menu__items"><a href="#experiencia">Experiência</a></li>
+          <li class="menu__items"><a href="#projetos">Projetos</a></li>
+          <li class="menu__items">
+            <a class="btn_menu" href="#contato">Fale comigo</a>
+          </li>
         </ul>
+        <div class="menu-bar">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </nav>
     </header>
     <main id="main">
       <section class="hero">
         <!--HERO SECTION START-->
         <div class="hero_title">
-          <span>Olá! Eu sou</span>
-          <h1 id="title">Humberto Colmenares</h1>
-          <p>Copywriter, estrategista SEO & Estudante Full-Stack Developer</p>
+          <div class="hero_text">
+            <span>Olá! Eu sou</span>
+            <h1 id="title">Humberto Colmenares</h1>
+            <p>Copywriter, estrategista SEO & Estudante Full-Stack Developer</p>
+          </div>
           <div class="social_media">
             <span class="icons">
               <a href="https://github.com/colmenareshr"
@@ -86,59 +96,68 @@
             de sucesso e, ao mesmo tempo, ter que estar em todos os lugares em
             relação ao seu website. Mas você não TEM QUE CONHECER TUDO. Basta
             procurar por especialistas em redação e criadores de conteúdo para
-            ajudá-lo. Esse é o meu trabalho e estou feliz em ajudá-lo a dar a
-            volta ao seu site. Como freelancer, posso melhorar a SEO de seu site
-            com técnicas de escrita persuasivas. Sou Humberto Colmenares,
-            redator sempre em forma-ação... estudo e prática constantes para
-            ajudar os empresários a melhorar o posicionamento de seu website com
-            palavras que os ajudem a se conectar com seus clientes potenciais.
-            Desde 2015 venho trabalhando em diferentes projetos em plataformas
-            de teletrabalho, como Workana e fiverr. Agora que você está lendo e
-            conheceu uma pequena parte de mim, escreva-me agora. Terei o maior
-            prazer em ajudá-lo com seu projeto.
+            ajudá-lo.
           </p>
-          <a href="#" class="btn">Fale comigo</a>
+          <p>
+            Esse é o meu trabalho e estou feliz em ajudá-lo a dar a volta ao seu
+            site. Como freelancer, posso melhorar a SEO de seu site com técnicas
+            de escrita persuasivas. Sou Humberto Colmenares, redator sempre em
+            forma-ação... estudo e prática constantes para ajudar os empresários
+            a melhorar o posicionamento de seu website com palavras que os
+            ajudem a se conectar com seus clientes potenciais. Desde 2015 venho
+            trabalhando em diferentes projetos em plataformas de teletrabalho,
+            como Workana e fiverr. Agora que você está lendo e conheceu uma
+            pequena parte de mim, escreva-me agora. Terei o maior prazer em
+            ajudá-lo com seu projeto.
+          </p>
+          <div class="boton">
+            <a href="#" class="btn btn_dark">Fale comigo</a>
+          </div>
         </div>
       </section>
       <!--FAST REVIEW END-->
       <!-- ABOUT ME SECTION -->
       <section id="sobre_mim">
         <h2 class="subtitulo">Sobre mim</h2>
-        <div class="sobre_mim_description">
-          <p>
-            Olá, eu sou Humberto. Como redator, posso ajudar empresas e negócios
-            a escrever cópias que os ajudarão a ocupar um lugar de destaque nos
-            resultados de pesquisa do Google.
-          </p>
-          <p>
-            Como desenvolvedor de estudantes de SEO, meu objetivo é combinar
-            ambos os mundos para otimizar qualquer website para SEO.
-          </p>
-        </div>
-        <div class="sobre_mim_description">
-          <p>
-            Também sou um homem de família, marido, filho e adoro música, boa
-            comida e assistir filmes em casa. Eu toco violão, o cuatro
-            venezuelano e canto lindamente (acho que sim).
-          </p>
-          <p>
-            Se você quiser saber mais sobre minhas habilidades profissionais,
-            você pode continuar navegando ou falar diretamente comigo.
-          </p>
+        <div class="sobre_mim">
+          <div class="sobre_mim_description">
+            <p>
+              Olá, eu sou Humberto. Como redator, posso ajudar empresas e
+              negócios a escrever cópias que os ajudarão a ocupar um lugar de
+              destaque nos resultados de pesquisa do Google.
+            </p>
+            <p>
+              Como desenvolvedor de estudantes de SEO, meu objetivo é combinar
+              ambos os mundos para otimizar qualquer website para SEO.
+            </p>
+          </div>
+          <div class="sobre_mim_description">
+            <p>
+              Também sou um homem de família, marido, filho e adoro música, boa
+              comida e assistir filmes em casa. Eu toco violão, o cuatro
+              venezuelano e canto lindamente (acho que sim).
+            </p>
+            <p>
+              Se você quiser saber mais sobre minhas habilidades profissionais,
+              você pode continuar navegando ou falar diretamente comigo.
+            </p>
+          </div>
         </div>
         <a href="#experiencia" class="btn">Explore</a>
+      </section>
+      <section id="servicios">
         <div class="servicios">
           <div class="servicios_icon-title">
             <span class="servicios_icon">
               <i class="fa-solid fa-pen-ruler"></i>
               <h3 class="servicios_subtitulo">Design</h3>
             </span>
+            <p>
+              Como web designer especializado em WordPress, trabalhei em
+              diferentes projetos, tanto de redesenho web quanto de criação de
+              sites do zero, sempre otimizados para SEO.
+            </p>
           </div>
-          <p>
-            Como web designer especializado em WordPress, trabalhei em
-            diferentes projetos, tanto de redesenho web quanto de criação de
-            sites do zero, sempre otimizados para SEO.
-          </p>
         </div>
         <div class="servicios">
           <div class="servicios_icon-title">
@@ -146,12 +165,12 @@
               <i class="fa-solid fa-pen-ruler"></i>
               <h3 class="servicios_subtitulo">Development</h3>
             </span>
+            <p>
+              Estou a treinar para desenvolver websites personalizados,
+              adaptando-se às necessidades de qualquer projeto num futuro
+              próximo. Estúdio para desenvolvimento Full Stack
+            </p>
           </div>
-          <p>
-            Estou a treinar para desenvolver websites personalizados,
-            adaptando-se às necessidades de qualquer projeto num futuro próximo.
-            Estúdio para desenvolvimento Full Stack
-          </p>
         </div>
         <div class="servicios1">
           <div class="servicios_icon-title">
@@ -159,65 +178,75 @@
               <i class="fa-solid fa-pen-ruler"></i>
               <h3 class="servicios_subtitulo">Escrevendo para blog</h3>
             </span>
+            <p>
+              É um dos trabalhos que eu mais amo. Ser capaz de escrever para a
+              web e para pessoas, ajudando empresas e seu público-alvo a se
+              conectarem a qualquer momento de sua jornada de compra.
+            </p>
           </div>
-          <p>
-            É um dos trabalhos que eu mais amo. Ser capaz de escrever para a web
-            e para pessoas, ajudando empresas e seu público-alvo a se conectarem
-            a qualquer momento de sua jornada de compra.
-          </p>
         </div>
       </section>
       <!--ABOUT ME SECTION END-->
-      <section class="experiencia">
+      <section id="experiencia">
         <h2 class="subtitulo">Experiência</h2>
-        <div class="container_cards">
+        <div class="experiencia">
           <h3>Usando Agora</h3>
-          <div class="cards">
-            <img
-              class="cards_icons"
-              src="/images/icons/git.png"
-              alt="Logo git"
-            />
-            <p>Git</p>
+          <!-- <div class="cards_exp"> -->
+          <div class="container_cards">
+            <div class="cards">
+              <img
+                class="cards_icons"
+                src="/images/icons/git.png"
+                alt="Logo git"
+              />
+              <p>Git</p>
+            </div>
+            <div class="cards">
+              <img src="/images/icons/html5.png" alt="html5 logo" />
+              <p>HTML5</p>
+            </div>
+            <div class="cards">
+              <img
+                src="/images/icons/css.png"
+                alt="css logo"
+                class="cards_icons"
+              />
+              <p>CSS3</p>
+            </div>
+            <div class="cards">
+              <img src="/images/icons/figma.png" alt="figma logo" />
+              <p>Figma</p>
+            </div>
+            <div class="cards">
+              <img
+                src="/images/icons/google-search-console.png"
+                alt="GSC logo"
+              />
+              <p>Google Search Console</p>
+            </div>
+            <div class="cards">
+              <img
+                src="/images/icons/google-analytics.png"
+                alt="Google Analytics logo"
+              />
+              <p>Google Analytics</p>
+            </div>
+            <div class="cards">
+              <img src="/images/icons/google-ads.png" alt="Google Ads logo" />
+              <p>Google Ads</p>
+            </div>
+            <div class="cards">
+              <img src="/images/icons/semrush.png" alt="html5 logo" />
+              <p>Semrush/p></p>
+            </div>
           </div>
-          <div class="cards">
-            <img src="/images/icons/html5.png" alt="html5 logo" />
-            <p>HTML5</p>
-          </div>
-          <div class="cards">
-            <img
-              src="/images/icons/css.png"
-              alt="css logo"
-              class="cards_icons"
-            />
-            <p>CSS3</p>
-          </div>
-          <div class="cards">
-            <img src="/images/icons/figma.png" alt="figma logo" />
-            <p>Figma</p>
-          </div>
-          <div class="cards">
-            <img src="/images/icons/google-search-console.png" alt="GSC logo" />
-            <p>Google Search Console</p>
-          </div>
-          <div class="cards">
-            <img
-              src="/images/icons/google-analytics.png"
-              alt="Google Analytics logo"
-            />
-            <p>Google Analytics</p>
-          </div>
-          <div class="cards">
-            <img src="/images/icons/google-ads.png" alt="Google Ads logo" />
-            <p>Google Ads</p>
-          </div>
-          <div class="cards">
-            <img src="/images/icons/semrush.png" alt="html5 logo" />
-            <p>Semrucho</p>
-          </div>
+          <!-- </div> -->
         </div>
-        <!--EXPERIENCIA FINAL-->
+        <a href="#contato" class="btn">Fala comigo</a>
+      </section>
 
+      <!--EXPERIENCIA FINAL-->
+      <section class="aprendiendo">
         <!--APRENDIENDO INICIO-->
         <div class="container_cards">
           <h3>Aprendendo</h3>
@@ -260,7 +289,7 @@
           </div>
         </div>
       </section>
-      <!--EXPERIENCIA FINAL-->
+      <!--EXPERIENCIA APRENDIENDO-->
     </main>
     <section class="projetos">
       <h2 class="subtitulo">Projetos</h2>
@@ -272,52 +301,94 @@
       </div>
       <div class="projetos_card">
         <div class="cards_items">
-           <div class="card_text">
-              <h4>Crossfit Bikain</h4>
-              <h3>WordPress</h3>
-              <p>Web design de 0 com WordPress. Usando figma para prototipagem inicial</p>
-              <a href="https://www.behance.net/gallery/128900597/CrossfitBikain-website" class="btn">ver projeto</a>
-           </div>
+          <div class="card_text">
+            <h4>Crossfit Bikain</h4>
+            <h3>WordPress</h3>
+            <p>
+              Web design de 0 com WordPress. Usando figma para prototipagem
+              inicial
+            </p>
+            <a
+              href="https://www.behance.net/gallery/128900597/CrossfitBikain-website"
+              class="btn"
+              >ver projeto</a
+            >
+          </div>
         </div>
         <div class="cards_items">
-           <div class="card_text">
-              <h4>Sistema Ventas</h4>
-              <h3>SEO</h3>
-              <p>Redesenho da Web, auditoria e otimização de SEO. Criação e execução de um plano de conteúdo para o site.</p>
-              <a href="https://www.behance.net/gallery/114195867/Posicionamiento-SEO-Diseno-Web" class="btn">ver projeto</a>
-           </div>
+          <div class="card_text">
+            <h4>Sistema Ventas</h4>
+            <h3>SEO</h3>
+            <p>
+              Redesenho da Web, auditoria e otimização de SEO. Criação e
+              execução de um plano de conteúdo para o site.
+            </p>
+            <a
+              href="https://www.behance.net/gallery/114195867/Posicionamiento-SEO-Diseno-Web"
+              class="btn"
+              >ver projeto</a
+            >
+          </div>
         </div>
         <div class="cards_items">
-<div class="card_text">
-              <h4>Listo y Limpio</h4>
-              <h3>Redação do site</h3>
-              <p>Redação das seções da web de acordo com o estudo de palavras-chave e otimização das meta tags para SEO.</p>
-              <a href="https://www.behance.net/gallery/114196827/Listo-y-Limpio-y-Mejor-posicionado" class="btn">ver projeto</a>
-           </div>
+          <div class="card_text">
+            <h4>Listo y Limpio</h4>
+            <h3>Redação do site</h3>
+            <p>
+              Redação das seções da web de acordo com o estudo de palavras-chave
+              e otimização das meta tags para SEO.
+            </p>
+            <a
+              href="https://www.behance.net/gallery/114196827/Listo-y-Limpio-y-Mejor-posicionado"
+              class="btn"
+              >ver projeto</a
+            >
+          </div>
         </div>
         <div class="cards_items">
-           <div class="card_text">
-              <h4>Dr. Trejos</h4>
-              <h3>Redação do site</h3>
-              <p>Redesenho da Web, auditoria e otimização de SEO. Criação e execução de um plano de conteúdo para o site.</p>
-              <a href="https://www.behance.net/gallery/114215071/Trabajo-SEO-de-algunas-palabras-clave" class="btn">ver projeto</a>
-           </div>
+          <div class="card_text">
+            <h4>Dr. Trejos</h4>
+            <h3>Redação do site</h3>
+            <p>
+              Redesenho da Web, auditoria e otimização de SEO. Criação e
+              execução de um plano de conteúdo para o site.
+            </p>
+            <a
+              href="https://www.behance.net/gallery/114215071/Trabajo-SEO-de-algunas-palabras-clave"
+              class="btn"
+              >ver projeto</a
+            >
+          </div>
         </div>
         <div class="cards_items">
-           <div class="card_text">
-              <h4>El Merkat Bali</h4>
-              <h3>WodrPress</h3>
-              <p>Web design do zero para um restaurante, usando o CMS WordPress e o compositor visual como construtor visual.</p>
-              <a href="https://www.behance.net/gallery/114196519/El-Merkat-Bali-Diseno-Web" class="btn">ver projeto</a>
-           </div>
+          <div class="card_text">
+            <h4>El Merkat Bali</h4>
+            <h3>WodrPress</h3>
+            <p>
+              Web design do zero para um restaurante, usando o CMS WordPress e o
+              compositor visual como construtor visual.
+            </p>
+            <a
+              href="https://www.behance.net/gallery/114196519/El-Merkat-Bali-Diseno-Web"
+              class="btn"
+              >ver projeto</a
+            >
+          </div>
         </div>
         <div class="cards_items">
-           <div class="card_text">
-              <h4>Sistema Administrativos</h4>
-              <h3>SEO</h3>
-              <p>Redesenho da Web, auditoria e otimização de SEO. Criação e execução de um plano de conteúdo para o site.</p>
-              <a href="https://www.behance.net/gallery/135528435/Diseno-web-y-SEO-Sistemas-Administrativos" class="btn">ver projeto</a>
-           </div>
+          <div class="card_text">
+            <h4>Sistema Administrativos</h4>
+            <h3>SEO</h3>
+            <p>
+              Redesenho da Web, auditoria e otimização de SEO. Criação e
+              execução de um plano de conteúdo para o site.
+            </p>
+            <a
+              href="https://www.behance.net/gallery/135528435/Diseno-web-y-SEO-Sistemas-Administrativos"
+              class="btn"
+              >ver projeto</a
+            >
+          </div>
         </div>
       </div>
       <div class="mais">
@@ -382,15 +453,19 @@
       <p>De volta ao topo</p>
       <div class="social_media_footer">
         <span class="social_icons">
-          <a href="https://twitter.com/colmenareshr"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://twitter.com/colmenareshr"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
         </span>
         <span class="social_icons">
-          <a href="https://instagram.com/humbertocolmenares"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://instagram.com/humbertocolmenares"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
         </span>
         <span class="social_icons">
           <a href="https://www.facebook.com/colmenareshr">
-             <i class="fa-brands fa-facebook"></i>
-         </a>
+            <i class="fa-brands fa-facebook"></i>
+          </a>
         </span>
       </div>
       <p>@2022 Humberto Colmenares | desenvolvido com amor.</p>

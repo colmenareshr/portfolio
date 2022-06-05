@@ -1,0 +1,51 @@
+@media only screen and (max-width: 600px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar .menu-bar {
+    display: block;
+    grid-column: 8 / 9;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  .navbar .menu {
+    position: absolute;
+    width: 100%;
+    height: 80vh;
+    display: none;
+  }
+  .hero {
+     position: relative;
+     height: 100vh;
+     max-width: 100%;
+     background-color: #c4c4c4;
+     display: grid;
+     grid-template-areas:
+     "hero_img"
+     "hero_title";
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fit, (minmax(600px, 1fr)));
+  grid-template-rows: repeat(8, 1fr);
+  align-items: center; */
+    /* display: flex;
+    flex-direction: column-reverse; */
+  }
+
+.hero_img {
+   grid-area: hero_img;
+   width: 100%;
+   height: 100%;
+   margin:0 auto;
+
+}
+.hero .hero_img .img_hc {
+   max-width: 600px;
+   height: 460px;
+   margin-bottom: 0;
+   
+}
+.hero_title {
+   grid-area: hero_title;
+}
+
+}
