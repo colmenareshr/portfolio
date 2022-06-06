@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 748px) {
   .navbar {
     position: relative;
   }
@@ -14,7 +14,36 @@
     height: 80vh;
     display: none;
   }
-  .hero {
+  .hero_img {
+  grid-column: 1 / 13;
+  grid-row: 1 / 9;
+  height: 100%;
+  max-width: 100%;
+  background-color: #000000;
+  padding: 50px 50px 0 50px;
+  align-items: center;
+}
+.hero_title {
+  z-index: 999;
+  width: 100%;
+  grid-column: 2 / 13;
+  grid-row: 5 / 9;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  color:#fff;
+}
+.hero_title .hero_text p {
+  color:#fff;
+}
+h1 {
+  font-family: Raleway, sans-serif;
+  font-size: 44px;
+  line-height: 1em;
+  font-weight: 900;
+}
+  /* .hero {
      position: relative;
      height: 100vh;
      max-width: 100%;
@@ -42,6 +71,6 @@
 .hero_title {
    grid-area: hero_title;
    font-size: 37px;
-}
+} */
 
 }
