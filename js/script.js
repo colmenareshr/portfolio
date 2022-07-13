@@ -2,25 +2,75 @@ function validarEmail(e) {
    let field = e.target;
    let fieldValue = field.value;
    if(fieldValue.search('@') == -1){
-      displayError('Upss, parece que el email no es válido', field);
+      displayError('Upss, parece que o email no é válido', field);
    }else {
       clearError(field);
-   } 
+   }
+
+   field.classList.remove('not-validate');
+   checkEnableSubmit();
 }
+
+
 function validateNotEmpty(e) {
    let field = e.target;
    let fieldValue = field.value;
    if(fieldValue = ''){
-      displayError('Upss, campor nao pode ser vazio', field);
+      displayError('Upss, campo nao pode ser vazio', field);
    }else {
       clearError(field);
    }
+   field.classList.remove('not-validate');
+   checkEnableSubmit();
 }
 
-function mostrarError(mensaje, field) {
+function displayError(mensaje, field) {
       clearError(field)
       field.classList.add('is-invalid');
+      let error = document.createElement('small');
+      error.style.color = 'red';
+      error.classList.add('error-message');
+      error.textContent = message;
+      field.parentElement.appendChild(error);
 }
+
+function clearError (field){
+   let container = field.parentElement;
+   let error = container.querySelector('.error-message');
+   if(error){
+      container.removeChild(error);
+   }
+   field.classList.remove('is-invalid')
+}
+
+function checkEnableSubmit (){
+   let formulario = document.querySelector('#form');
+   let notValidated = form.querySelectorAll('.not-validated');
+   let errors = form.querySelectorAll('.is-invalid');
+
+   if (errors.length == 0 && notValidated.length == 0) {
+      enableSubmit();
+   }else{
+      disableSubmit();
+   }
+}
+
+function enableSubmit(){
+   let form = document.querySelector('#form');
+   let submit = form.querySelector('[type-submit]');
+
+
+   submit.disabled = false;
+}
+
+function disableSubmit(){
+   let form = document.querySelector('#form');
+   let submit = form.querySelector('[type-submit]');
+
+   
+   submit.disabled = true;
+}
+
 
 
 document.querySelectorAll('input').forEach(el => el.classList.add('not-validated'));
