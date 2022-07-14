@@ -76,3 +76,17 @@ formulario.addEventListener('submit', (e)=>{
       },5000);
    }
 });
+
+const misRepositorios = async () =>{
+   try {
+      const cargarRepositorios = await fetch('https://api.github.com/users/colmenareshr/repos');
+      //console.log(cargarRepositorios);
+      if(cargarRepositorios.status === 200){
+         const repositorios = await cargarRepositorios.json();
+         console.log(repositorios);
+      }
+   } catch (error) {
+      console.log(error);
+   }
+}
+misRepositorios();

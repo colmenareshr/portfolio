@@ -89,9 +89,13 @@ body {
   height: 80vh;
   max-width: 100%;
   background-color: #c4c4c4;
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, 1fr);
   align-items: center;
+
 }
 .hero_title {
   grid-column: 3 / 6;
