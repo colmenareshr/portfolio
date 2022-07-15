@@ -284,10 +284,6 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr) );
   align-items: center;
   justify-items: center;
-  /* display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 20px; */
 }
 .projetos_cat h3 {
   letter-spacing: 2px;
@@ -383,6 +379,49 @@ font-family: Raleway;
 letter-spacing: 2px;
 font-weight: 500;
 }
+
+#repos {
+  height: 70vh;
+  width: 100vw;
+  background-color: #c4c4c4;
+  color:#181818;
+  width: 100%;
+}
+.repos_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+#repos_template{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+.repos_card{
+  padding: 5px;
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   filter: grayscale(0.5);
+
+}
+.repos_card h3{
+   font-size: 13px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   margin: 0;
+   transition: 0.3s;
+}
+
+.repos_card a{
+  text-decoration: none;
+  color: #181818;
+}
+
+
 #contato {
   width: 100%;
   background-color:rgb(208, 208, 208);

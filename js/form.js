@@ -77,16 +77,30 @@ formulario.addEventListener('submit', (e)=>{
    }
 });
 
-const misRepositorios = async () =>{
+const misRepositorios = async() => {
+   
    try {
-      const cargarRepositorios = await fetch('https://api.github.com/users/colmenareshr/repos');
-      //console.log(cargarRepositorios);
-      if(cargarRepositorios.status === 200){
-         const repositorios = await cargarRepositorios.json();
-         console.log(repositorios);
+         const cargaRepositorio = await fetch('https://api.github.com/users/colmenareshr/repos');
+         
+         if(cargaRepositorio.status === 200){
+            const datosRepo = await cargaRepositorio.json();
+         console.log(datosRepo);
+         var repositorio= ""; 
+         datosRepo.forEach(repositorios => {
+            repositorio += `<div class="repos_card">
+            
+            
+            <a href="${repositorios.html_url}"><h3>${repositorios.name}</h3></a>
+
+            
+            </div>
+            `;
+            
+         });
       }
-   } catch (error) {
-      console.log(error);
+      document.getElementById('repos_template').innerHTML = repositorio;
+   }catch(error){
+         console.log(error);
+      }
    }
-}
-misRepositorios();
+   misRepositorios();
