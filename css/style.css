@@ -262,7 +262,7 @@ body {
 #projetos .projetos_title {
   height: 50vh;
   width: 100%;
-  background-image: url("/images/portada-portfolio.JPG");
+  background-image: url("images/portada-portfolio.JPG");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -299,7 +299,7 @@ body {
  .card_item1 {
   height: 230px;
   
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/crossfit-bikain.JPG');
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('images/crossfit-bikain.JPG');
   background-size: cover;
   background-position: center;
   padding: 30px;
@@ -307,7 +307,7 @@ body {
 .card_item2 {
   height: 230px;
  
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/sistema-ventas.JPG');
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('images/sistema-ventas.JPG');
   background-size: cover;
   background-position: center;
   padding: 30px;
@@ -315,7 +315,7 @@ body {
 .card_item3 {
   height: 230px;
  
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/listo-limpio.JPG');
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('images/listo-limpio.JPG');
   background-size: cover;
   background-position: center;
   padding: 30px;
@@ -323,7 +323,7 @@ body {
 .card_item4 {
   height: 230px;
  
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/dr-trejos.JPG');
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('images/dr-trejos.JPG');
   background-size: cover;
   background-position: center;
   padding: 30px;
@@ -331,7 +331,7 @@ body {
 .card_item5 {
   height: 230px;
  
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/el-merkat.JPG');
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('images/el-merkat.JPG');
   background-size: cover;
   background-position: center;
   padding: 30px;
@@ -339,7 +339,7 @@ body {
 .card_item6 {
   height: 230px;
  
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/sistemas-administrativos.JPG');
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('images/sistemas-administrativos.JPG');
   background-size: cover;
   background-position: center;
   padding: 30px;
@@ -347,7 +347,7 @@ body {
 .card_item2 {
   height: 230px;
  
-  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('/images/sistema-ventas.JPG');
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url('images/sistema-ventas.JPG');
   background-size: cover;
   background-position: center;
   padding: 30px;
